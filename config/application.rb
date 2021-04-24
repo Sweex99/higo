@@ -6,7 +6,7 @@ require "rails/all"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module AwesomeRails
+module Higo
   class Application < Rails::Application
     config.app                            = config_for(:config)
     config.i18n.default_locale            = :en
@@ -22,5 +22,9 @@ module AwesomeRails
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    config.to_prepare do
+      Devise::SessionsController      .layout('authentication')
+      Devise::RegistrationsController .layout('authentication')
+    end
   end
 end

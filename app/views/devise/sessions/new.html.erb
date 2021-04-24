@@ -1,0 +1,37 @@
+<%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: 'needs_validation'}) do |f| %>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <%= f.email_field :email, autofocus: true, autocomplete: 'email', class: 'form-control', tabindex: 1 %>
+    <div class="invalid-feedback">
+      Please fill in your email
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="d-block">
+      <label for="password" class="control-label">Password</label>
+      <div class="float-right">
+        <a href="auth-forgot-password.html" class="text-small">
+          Forgot Password?
+        </a>
+      </div>
+    </div>
+    <%= f.password_field :password, autocomplete: "current-password", class: 'form-control', tabindex: 2 %>
+    <div class="invalid-feedback">
+      please fill in your password
+    </div>
+  </div>
+
+  <% if devise_mapping.rememberable? %>
+    <div class="form-group'">
+      <div class="custom-control custom-checkbox">
+        <%= f.check_box :remember_me, class: 'custom-control-input', id: 'remember_me' %>
+        <label class="custom-control-label" for="remember-me">Remember Me</label><br />
+      </div>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.submit "Log in", class: 'btn btn-primary btn-lg btn-block', tabindex: 3 %>
+  </div>
+<% end %>
