@@ -13,6 +13,6 @@ jobs:
           name: Which bundler?
           command: bundle -v
       - run:
-          name: Update Bundler
-          command: bundle update
+          name: install bundler
+          command: gem install bundler -v 2.1.2
       - ruby/bundle-install
