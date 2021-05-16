@@ -10,9 +10,6 @@ jobs:
     steps:
       - checkout
       - run:
-          name: install mimemagic
-          command: bundle update --conservative ffi
-      - run:
           name: Install bundler
           command: gem install bundler -v 2.1.2
 

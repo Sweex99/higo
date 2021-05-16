@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/mimemagicrb/mimemagic.git
+  revision: 01f92d86d15d85cfd0f20dabd025dcbd36a8a60f
+  ref: 01f92d86d15d85cfd0f20dabd025dcbd36a8a60f
+  specs:
+    mimemagic (0.3.5)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -53,7 +60,7 @@ GEM
       activerecord (= 6.1.3)
       activesupport (= 6.1.3)
       marcel (~> 0.3.1)
-      mimemagic (~> 0.3.2)
+      mimemagic (~> 0.3.5)
     activesupport (6.1.3)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
@@ -123,7 +130,7 @@ GEM
     json (2.5.1)
     jsonapi-serializer (2.2.0)
       activesupport (>= 4.2)
-    libv8 (8.4.255.0-x86_64-darwin-19)
+    libv8 (8.4.255.0)
     listen (3.4.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -135,14 +142,15 @@ GEM
     marcel (0.3.3)
       mimemagic (~> 0.3.2)
     method_source (1.0.0)
-    mimemagic (0.3.5)
     mini_mime (1.1.0)
+    mini_portile2 (2.5.1)
     mini_racer (0.3.1)
       libv8 (~> 8.4.255)
     minitest (5.14.4)
     msgpack (1.4.2)
     nio4r (2.5.7)
-    nokogiri (1.11.3-x86_64-darwin)
+    nokogiri (1.11.3)
+      mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
     orm_adapter (0.5.0)
     platform_agent (1.0.1)
@@ -335,6 +343,7 @@ DEPENDENCIES
   geared_pagination
   jsonapi-serializer
   listen (~> 3.3)
+  mimemagic!
   mini_racer
   platform_agent
   pry
