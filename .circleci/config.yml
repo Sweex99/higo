@@ -17,7 +17,7 @@ jobs:
       - run:
           name: Install bundler
           command: gem install bundler -v 2.1.2
-      - run: bundle install--with test
+      - run: bundle install --with test
       - run: sudo apt install -y postgresql-client || true
       - run:
           name: Set up DB
