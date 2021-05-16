@@ -15,10 +15,10 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Install bundler
-          command: gem install bundler -v 2.1.2
-      - ruby/bundle-install
+        name: Install bundler
+        command: gem install bundler -v 2.1.2
+      - ruby/bundle-install --with test
       - run: sudo apt install -y postgresql-client || true
       - run:
-          name: Set up DB
-          command: bundle exec rake db:create
+        name: Set up DB
+        command: bundle exec rake db:create RAILS_ENV=test
