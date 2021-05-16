@@ -7,9 +7,11 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
+  database: higo_test_db
   username: higo_test
 
 production:
   adapter: postgresql
   encoding: unicode
   username: higo_production
+  database: higo_production_db
