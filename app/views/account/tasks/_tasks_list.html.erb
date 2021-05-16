@@ -1,0 +1,53 @@
+<div class="card-body">
+  <ul class="list-unstyled list-unstyled-border list-unstyled-noborder">
+    <% tasks.each do |task| %>
+      <li class="media">
+
+        <%= image_tag('avatar/avatar-1.png', class: 'rounded-circle mr-3', width: 70) %>
+        <div class="media-body">
+          <div class="media-right"><div class="text-success">Completed</div></div>
+          <div class="media-title mb-1"><%= task.title %></div>
+          <div class="text-time">Yesterday</div>
+          <div class="media-description text-muted">
+            <%= task.desription %>
+          </div>
+          <div class="media-links">
+            <a href="#" class="fa fa-pdf">View</a>
+            <div class="bullet"></div>
+            <a href="#">Edit</a>
+            <div class="bullet"></div>
+            <a href="#" class="text-danger">Trash</a>
+          </div>
+        </div>
+      </li>
+    <% end %>
+    <li class="media">
+      <div class="media-body">
+        <div class="media-right"><div class="text-warning">Pending</div></div>
+        <div class="media-title mb-1">Bambang Uciha</div>
+        <div class="text-time">Yesterday</div>
+        <div class="media-links">
+          <a href="#" class="fa fa-file-pdf text-danger"></a>
+          <div class="bullet"></div>
+          <a href="#" class="fa fa-file-image text-danger"></a>
+          <div class="bullet"></div>
+          <a href="#" class="fa fa-file text-danger"></a>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-body">
+        <div class="media-right"><div class="text-primary">Approved</div></div>
+        <div class="media-title mb-1">Ujang Maman</div>
+        <div class="text-time">Yesterday</div>
+        <div class="media-links">
+          <a href="#" class="fa fa-file-pdf text-danger font-middle"></a>
+          <div class="bullet"></div>
+          <a href="#" class="fa fa-file-image text-danger font-middle"></a>
+          <div class="bullet"></div>
+          <a href="#" class="fa fa-file text-danger font-middle"></a>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

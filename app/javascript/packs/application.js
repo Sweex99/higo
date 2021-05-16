@@ -13,7 +13,7 @@ const jquery = require("jquery")
 const descriptor = { value: jquery, writable: false, configurable: false }
 Object.defineProperties(window, { $: descriptor, jQuery: descriptor })
 
-// App libraries
+// AppJs libraries
 require("bootstrap")
 require("jquery.nicescroll")
 

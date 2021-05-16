@@ -1,0 +1,280 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/tarasmatiiv/Projects/higo/app/controllers/account/class_rooms_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          0,
+          null,
+          0,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          null,
+          null,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/tarasmatiiv/Projects/higo/app/controllers/account/account_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/tarasmatiiv/Projects/higo/spec/controllers/account/tasks_controller_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/tarasmatiiv/Projects/higo/app/controllers/account/tasks_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/tarasmatiiv/Projects/higo/spec/models/answer_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/tarasmatiiv/Projects/higo/app/models/answer.rb": {
+        "lines": [
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/tarasmatiiv/Projects/higo/spec/models/class_room_setting_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/tarasmatiiv/Projects/higo/app/models/class_room_setting.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/tarasmatiiv/Projects/higo/spec/models/class_room_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/tarasmatiiv/Projects/higo/app/models/class_room.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/tarasmatiiv/Projects/higo/spec/models/mark_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/tarasmatiiv/Projects/higo/app/models/mark.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/tarasmatiiv/Projects/higo/spec/models/organization_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/tarasmatiiv/Projects/higo/app/models/organization.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/tarasmatiiv/Projects/higo/spec/models/subject_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/tarasmatiiv/Projects/higo/app/models/subject.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/tarasmatiiv/Projects/higo/spec/models/task_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/tarasmatiiv/Projects/higo/app/models/task.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/tarasmatiiv/Projects/higo/spec/models/user_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      }
+    },
+    "timestamp": 1621121939
+  }
+}

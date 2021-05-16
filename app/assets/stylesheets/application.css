@@ -22,6 +22,10 @@
  *= require_self
  */
 
+.fond-size-menu {
+    fond-size: 35px;
+}
+
 .turbolinks-progress-bar {
   background-color: #fd7e14;
 }

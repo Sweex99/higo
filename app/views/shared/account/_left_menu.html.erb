@@ -1,0 +1,58 @@
+<div class="main-sidebar sidebar-style-2" tabindex="1" style="overflow: hidden; outline: none;">
+  <aside id="sidebar-wrapper">
+    <div class="sidebar-brand">
+      <a href="index.html">Stisla</a>
+    </div>
+    <div class="sidebar-brand sidebar-brand-sm">
+      <a href="index.html">St</a>
+    </div>
+    <div class=" p-3 hide-sidebar-mini">
+      <%= link_to new_account_class_room_path, class: 'btn btn-success btn-lg btn-block btn-icon-split' do %>
+        <i class="fas fa-plus"></i> Створити Клас
+      <% end %>
+
+    </div>
+    <ul class="sidebar-menu">
+      <li>
+        <%= link_to account_dashboard_index_path, class: 'nav-link' do %>
+          <i class="fas fa-chart-line"></i><span>Dashboard</span>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to account_class_rooms_path, class: 'nav-link' do %>
+          <i class="fas fa-school"></i><span>Мій Клас</span>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to account_tasks_path, class: 'nav-link' do %>
+          <i class="fas fa-tasks"></i><span>Мої завдання</span>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to account_marks_path, class: 'nav-link' do %>
+          <i class="fas fa-marker"></i><span>Мої оцінки</span>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to account_marks_path, class: 'nav-link' do %>
+          <i class="fas fa-signal"></i><span>Статистика</span>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to account_marks_path, class: 'nav-link' do %>
+          <i class="fas fa-less-than-equal"></i><span>Мої курси</span>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to account_marks_path, class: 'nav-link' do %>
+          <i class="fas fa-history"></i><span>Історія</span>
+        <% end %>
+      </li> <li>
+      <%= link_to account_marks_path, class: 'nav-link' do %>
+        <i class="fas fa-thumbs-up"></i><span>Вподобане</span>
+      <% end %>
+    </li>
+
+    </ul>
+  </aside>
+</div>

@@ -1,0 +1,87 @@
+<div class="row mt-3" style="border-color: black">
+  <div class="col-12 col-sm-12 col-lg-5">
+    <div class="card profile-widget">
+      <div class="profile-widget-header">
+        <%= image_tag('avatar/avatar-1.png', class: 'rounded-circle profile-widget-picture') %>
+        <div class="profile-widget-items">
+          <div class="profile-widget-item">
+            <div class="profile-widget-item-label">Tasks</div>
+            <div class="profile-widget-item-value">187</div>
+          </div>
+          <div class="profile-widget-item">
+            <div class="profile-widget-item-label">Followers</div>
+            <div class="profile-widget-item-value">6,8K</div>
+          </div>
+          <div class="profile-widget-item">
+            <div class="profile-widget-item-label">Resources</div>
+            <div class="profile-widget-item-value">2,1K</div>
+          </div>
+        </div>
+      </div>
+      <div class="profile-widget-description pb-0">
+        <div class="profile-widget-name">Hasan Basri <div class="text-muted d-inline font-weight-normal"><div class="slash"></div> Web Developer</div></div>
+        <div class="profile-widget-description">
+          <div class="profile-widget-name">Ujang Maman <div class="text-muted d-inline font-weight-normal"><div class="slash"></div> Web Developer</div></div>
+          Ujang maman is a superhero name in <b>Indonesia</b>, especially in my family. He is not a fictional character but an original hero in my family, a hero for his children and for his wife. So, I use the name as a user in this template. Not a tribute, I'm just bored with <b>'John Doe'</b>.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-12">
+            <div class="list-group" id="list-tab" role="tablist">
+              <a class="list-group-item list-group-item-action active show" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-selected="true">Новини</a>
+              <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-selected="false">Завдання</a>
+              <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-selected="false">Галерея</a>
+              <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-selected="false">Підписники</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-sm-12 col-lg-7">
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade active show" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+          <div class="card">
+            <div class="card-header">
+              <h4>Card Title</h4>
+            </div>
+            <div class="card-body">
+              This is some text within a card body.
+            </div>
+            <div class="card-footer">
+              Footer Card
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+          <div class="card">
+            <div class="card-header">
+              <h4>Tasks</h4>
+            </div>
+            <%= render 'account/tasks/tasks_list', tasks: @class_room.tasks %>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+          In quis non esse eiusmod sunt fugiat magna pariatur officia anim ex officia nostrud amet nisi pariatur eu est id ut exercitation ex ad reprehenderit dolore nostrud sit ut culpa consequat magna ad labore proident ad qui et tempor exercitation in aute veniam et velit dolore irure qui ex magna ex culpa enim anim ea mollit consequat ullamco exercitation in.
+        </div>
+        <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+          Lorem ipsum culpa in ad velit dolore anim labore incididunt do aliqua sit veniam commodo elit dolore do labore occaecat laborum sed quis proident fugiat sunt pariatur. Cupidatat ut fugiat anim ut dolore excepteur ut voluptate dolore excepteur mollit commodo.
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+</div>

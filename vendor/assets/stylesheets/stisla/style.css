@@ -2581,7 +2581,7 @@ body.sidebar-mini .main-sidebar {
   body.sidebar-mini .main-sidebar .sidebar-menu li:hover > ul.dropdown-menu {
     display: block !important; }
     body.sidebar-mini .main-sidebar .sidebar-menu li:hover > ul.dropdown-menu li:hover > a {
-      background-color: #fcfcfd; }
+       }
     body.sidebar-mini .main-sidebar .sidebar-menu li:hover > ul.dropdown-menu li .dropdown-menu {
       left: 200px;
       padding: 0; }

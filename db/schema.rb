@@ -10,7 +10,88 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_24_104804) do
+ActiveRecord::Schema.define(version: 2021_05_15_231639) do
+
+  create_table "answers", force: :cascade do |t|
+    t.string "body"
+    t.string "url_file"
+    t.integer "user_id"
+    t.integer "mark_id"
+    t.integer "task_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["mark_id"], name: "index_answers_on_mark_id"
+    t.index ["task_id"], name: "index_answers_on_task_id"
+    t.index ["user_id"], name: "index_answers_on_user_id"
+  end
+
+  create_table "class_room_settings", force: :cascade do |t|
+    t.integer "max_mark"
+    t.string "avatar"
+    t.string "logo_color"
+    t.string "logo"
+    t.boolean "gallery"
+    t.integer "class_room_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["class_room_id"], name: "index_class_room_settings_on_class_room_id"
+  end
+
+  create_table "class_rooms", force: :cascade do |t|
+    t.string "title"
+    t.string "description"
+    t.integer "organization_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.integer "author_id"
+    t.index ["organization_id"], name: "index_class_rooms_on_organization_id"
+  end
+
+  create_table "marks", force: :cascade do |t|
+    t.integer "task_id"
+    t.integer "number"
+    t.integer "user_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["task_id"], name: "index_marks_on_task_id"
+    t.index ["user_id"], name: "index_marks_on_user_id"
+  end
+
+  create_table "organizations", force: :cascade do |t|
+    t.string "title"
+    t.string "description"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "studentships", force: :cascade do |t|
+    t.integer "class_room_id"
+    t.integer "student_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "subjects", force: :cascade do |t|
+    t.string "title"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "tasks", force: :cascade do |t|
+    t.string "title"
+    t.string "description"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.integer "class_room_id"
+    t.index ["class_room_id"], name: "index_tasks_on_class_room_id"
+  end
+
+  create_table "teacherships", force: :cascade do |t|
+    t.integer "class_room_id"
+    t.integer "teacher_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -25,6 +106,7 @@ ActiveRecord::Schema.define(version: 2021_04_24_104804) do
     t.string "last_sign_in_ip"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "type"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end

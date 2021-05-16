@@ -1,9 +1,5 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 import App from "./App";
-import * as jQuery from "jquery";
-import moment from "moment";
-import Chart from 'chart.js'
 
 class HelloWorld extends App {
   render() {
@@ -108,6 +104,6 @@ class HelloWorld extends App {
       </section>
     );
   };
-};
+}
 
 export default HelloWorld;
