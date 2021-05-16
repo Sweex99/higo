@@ -12,6 +12,7 @@ gem 'react_on_rails'
 gem 'bootsnap', '>= 1.4.4', require: false
 gem 'devise'
 gem 'jsonapi-serializer'
+gem 'pg'
 
 group :development, :test do
   gem 'mimemagic', github: 'mimemagicrb/mimemagic', ref: '01f92d86d15d85cfd0f20dabd025dcbd36a8a60f'
@@ -33,11 +34,9 @@ group :development do
   gem 'rack-mini-profiler', '~> 2.0'
   gem 'listen', '~> 3.3'
   gem 'spring'
-  gem 'sqlite3', '~> 1.4'
 end
 
 group :test do
-  gem 'pg'
   gem 'capybara', '>= 3.26'
   gem 'selenium-webdriver'
   gem 'webdrivers'
