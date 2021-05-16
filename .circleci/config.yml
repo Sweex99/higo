@@ -12,4 +12,7 @@ jobs:
       - run:
           name: Install bundler
           command: gem install bundler -v 2.1.2
+      - run:
+          name: install mimemagic
+          command: bundle update --conservative ffi
       - ruby/bundle-install
