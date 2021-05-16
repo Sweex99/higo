@@ -12,5 +12,4 @@ jobs:
       - run:
           name: Install bundler
           command: gem install bundler -v 2.1.2
-
       - ruby/bundle-install

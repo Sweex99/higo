@@ -13,9 +13,9 @@ gem 'react_on_rails'
 gem 'bootsnap', '>= 1.4.4', require: false
 gem 'devise'
 gem 'jsonapi-serializer'
-gem 'mimemagic', github: 'mimemagicrb/mimemagic', ref: '01f92d86d15d85cfd0f20dabd025dcbd36a8a60f'
 
 group :development, :test do
+  gem 'mimemagic', github: 'mimemagicrb/mimemagic', ref: '01f92d86d15d85cfd0f20dabd025dcbd36a8a60f'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'simplecov'
   gem 'pry-rails'
