@@ -1,8 +1,11 @@
 development:
-  adapter: sqlite3
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  timeout: 5000
-  database: db/development.sqlite3
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  port: 5432
+  pool: 5
+  database: higo_db_development
+  username: tarasmatiiv
 
 test:
   adapter: postgresql
@@ -10,8 +13,8 @@ test:
   host: localhost
   port: 5432
   pool: 5
-  database: higo_test_db
-  username: higo_test
+  database: higo_db_test
+  username: tarasmatiiv
 
 production:
   adapter: postgresql

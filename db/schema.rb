@@ -10,7 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_15_231639) do
+ActiveRecord::Schema.define(version: 2021_05_15_125023) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "answers", force: :cascade do |t|
     t.string "body"
@@ -64,13 +67,6 @@ ActiveRecord::Schema.define(version: 2021_05_15_231639) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "studentships", force: :cascade do |t|
-    t.integer "class_room_id"
-    t.integer "student_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "subjects", force: :cascade do |t|
     t.string "title"
     t.datetime "created_at", precision: 6, null: false
@@ -86,11 +82,14 @@ ActiveRecord::Schema.define(version: 2021_05_15_231639) do
     t.index ["class_room_id"], name: "index_tasks_on_class_room_id"
   end
 
-  create_table "teacherships", force: :cascade do |t|
-    t.integer "class_room_id"
-    t.integer "teacher_id"
+  create_table "user_rooms", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "class_room_id"
+    t.string "role"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["class_room_id"], name: "index_user_rooms_on_class_room_id"
+    t.index ["user_id"], name: "index_user_rooms_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|

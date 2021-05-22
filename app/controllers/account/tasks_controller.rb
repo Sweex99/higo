@@ -2,7 +2,7 @@ module Account
   class TasksController < AccountController
     def index
       @tasks = resources
-      binding.pry
+
       render json: TaskSerializer.new(@tasks).serializable_hash
     end
 

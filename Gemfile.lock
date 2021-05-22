@@ -153,6 +153,7 @@ GEM
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
     orm_adapter (0.5.0)
+    pg (1.2.3)
     platform_agent (1.0.1)
       activesupport (>= 5.2.0)
       useragent (~> 0.16.3)
@@ -297,7 +298,6 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    sqlite3 (1.4.2)
     thor (1.1.0)
     tilt (2.0.10)
     turbolinks (5.2.1)
@@ -345,6 +345,7 @@ DEPENDENCIES
   listen (~> 3.3)
   mimemagic!
   mini_racer
+  pg
   platform_agent
   pry
   pry-byebug (= 3.7.0)
@@ -366,7 +367,6 @@ DEPENDENCIES
   simplecov
   spreadsheet_architect
   spring
-  sqlite3 (~> 1.4)
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 4.1.0)

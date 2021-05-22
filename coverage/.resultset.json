@@ -5,6 +5,35 @@
         "lines": [
           1,
           1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
           1,
           0,
           null,
@@ -12,35 +41,13 @@
           null,
           null,
           1,
-          0,
-          null,
-          0,
-          null,
-          null,
-          1,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          null,
-          null,
-          null,
-          1,
-          0,
-          null,
-          0,
-          null,
-          null,
-          1,
           null,
           1,
           0,
           null,
           null,
           1,
-          0,
+          2,
           null,
           null,
           null
@@ -60,15 +67,15 @@
           1,
           null,
           1,
-          0,
-          0,
+          1,
+          1,
           null,
           0,
           null,
           null,
           null,
           1,
-          0,
+          1,
           null,
           null,
           null
@@ -85,10 +92,10 @@
           null,
           1,
           1,
-          0,
+          1,
           null,
-          0,
-          0,
+          1,
+          1,
           0,
           null,
           null,
@@ -116,68 +123,49 @@
           1,
           1,
           1,
-          0,
-          0,
-          0,
-          null,
-          null,
           1,
-          0,
-          null,
+          1,
           null,
           1,
           null,
-          null,
-          1,
-          null,
-          null,
-          1,
           null,
           1,
           0,
           null,
           null,
-          null
-        ]
-      },
-      "/Users/tarasmatiiv/Projects/higo/spec/models/answer_spec.rb": {
-        "lines": [
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
           1,
           null,
           1,
           1,
-          null
-        ]
-      },
-      "/Users/tarasmatiiv/Projects/higo/app/models/answer.rb": {
-        "lines": [
-          1,
+          null,
           null,
           null
         ]
       },
-      "/Users/tarasmatiiv/Projects/higo/spec/models/class_room_setting_spec.rb": {
+      "/Users/tarasmatiiv/Projects/higo/app/models/user_room.rb": {
         "lines": [
+          1,
+          1,
           1,
           null,
           1,
           1,
-          null
-        ]
-      },
-      "/Users/tarasmatiiv/Projects/higo/app/models/class_room_setting.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/tarasmatiiv/Projects/higo/spec/models/class_room_spec.rb": {
-        "lines": [
-          1,
           null,
           1,
           1,
+          1,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
           null
         ]
       },
@@ -187,23 +175,42 @@
           1,
           1,
           1,
+          1,
+          1,
+          1,
           null,
           1,
           1,
-          1,
-          1,
           null,
           1,
-          0,
+          1,
           null,
           null
         ]
       },
-      "/Users/tarasmatiiv/Projects/higo/spec/models/mark_spec.rb": {
+      "/Users/tarasmatiiv/Projects/higo/app/serializers/class_room_serializer.rb": {
         "lines": [
+          1,
           1,
           null,
           1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/tarasmatiiv/Projects/higo/app/serializers/user_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          null,
           1,
           null
         ]
@@ -211,46 +218,6 @@
       "/Users/tarasmatiiv/Projects/higo/app/models/mark.rb": {
         "lines": [
           1,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/tarasmatiiv/Projects/higo/spec/models/organization_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/tarasmatiiv/Projects/higo/app/models/organization.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/tarasmatiiv/Projects/higo/spec/models/subject_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/tarasmatiiv/Projects/higo/app/models/subject.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/tarasmatiiv/Projects/higo/spec/models/task_spec.rb": {
-        "lines": [
-          1,
-          null,
           1,
           1,
           null
@@ -265,16 +232,17 @@
           null
         ]
       },
-      "/Users/tarasmatiiv/Projects/higo/spec/models/user_spec.rb": {
+      "/Users/tarasmatiiv/Projects/higo/app/serializers/task_serializer.rb": {
         "lines": [
+          1,
           1,
           null,
           1,
-          1,
+          null,
           null
         ]
       }
     },
-    "timestamp": 1621121939
+    "timestamp": 1621717839
   }
 }
