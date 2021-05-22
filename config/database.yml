@@ -14,7 +14,6 @@ test:
   port: 5432
   pool: 5
   database: higo_db_test
-  username: tarasmatiiv
 
 production:
   adapter: postgresql
