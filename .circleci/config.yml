@@ -30,4 +30,4 @@ jobs:
           command: rake db:seed RAILS_ENV=test
       - run:
           name: Run rspec
-          command: rspec
+          command: bundle exec rspec spec RAILS_ENV=test
