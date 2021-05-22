@@ -30,4 +30,6 @@ jobs:
           command: rake db:seed RAILS_ENV=test
       - run:
           name: Run rspec
-          command: bundle exec rspec spec
+          command: |
+          TESTFILES=$(circleci tests glob "spec/**/*_spec.rb" | circleci tests split
+          bundle exec rspec ${TESTFILES}
