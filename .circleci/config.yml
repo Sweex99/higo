@@ -21,13 +21,13 @@ jobs:
       - run: sudo apt install -y postgresql-client || true
       - run:
           name: Set up DB
-          command: bundle exec rake db:create RAILS_ENV=test
+          command: rake db:create RAILS_ENV=test
       - run:
           name: Run migrations
-          command: bundle exec rake db:migrate RAILS_ENV=test
+          command: rake db:migrate RAILS_ENV=test
       - run:
           name: Run seed
-          command: bundle exec rake db:seed RAILS_ENV=test
+          command: rake db:seed RAILS_ENV=test
       - run:
           name: Run rspec
-          command: bundle exec rspec
+          command: rspec
