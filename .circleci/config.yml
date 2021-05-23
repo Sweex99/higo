@@ -20,9 +20,6 @@ jobs:
       - run: bundle install --with test
       - run: sudo apt install -y postgresql-client || true
       - run:
-          name: Set up DB
-          command: rake db:create RAILS_ENV=test
-      - run:
           name: Run migrations
           command: rake db:migrate RAILS_ENV=test
       - run:

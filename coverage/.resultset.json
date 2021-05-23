@@ -193,9 +193,18 @@
           null,
           null,
           1,
-          0,
+          2,
           null,
           null,
+          null
+        ]
+      },
+      "/Users/tarasmatiiv/Projects/higo/app/serializers/user_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
           null
         ]
       },
@@ -227,6 +236,6 @@
         ]
       }
     },
-    "timestamp": 1621795362
+    "timestamp": 1621795588
   }
 }

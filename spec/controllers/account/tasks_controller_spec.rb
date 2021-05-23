@@ -8,7 +8,7 @@ RSpec.describe Account::TasksController, type: :controller do
   describe 'GET #index' do
     it 'return user`s tasks' do
       get :index
-
+      puts User.all
       json_response = JSON.parse(response.body)
       json_response['data'].each do |class_room|
         expect(class_room['type']).to eql('task')
