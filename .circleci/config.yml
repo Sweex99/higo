@@ -28,4 +28,6 @@ jobs:
           command: bundle exec rake
           environment:
             RAILS_ENV: test
-            
+      - run:
+          name: Run Rails Best Practices
+          command: rails_best_practices .
