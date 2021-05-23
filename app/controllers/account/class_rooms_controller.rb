@@ -1,11 +1,6 @@
 module Account
   class ClassRoomsController < AccountController
-
-    skip_before_action :authenticate_user!
-    skip_before_action :save_user_name_in_session
-
     def index
-
       class_rooms = resource
 
       render json: ClassRoomSerializer.new(class_rooms).serializable_hash
@@ -15,7 +10,6 @@ module Account
       params_id = params[:id].to_i
       class_room = resource.find(params_id)
 
-      binding.pry
       render json: ClassRoomSerializer.new(class_room).serializable_hash
     end
 
@@ -42,7 +36,7 @@ module Account
     end
 
     def resource
-      User.third.class_rooms
+      current_user.class_rooms
     end
   end
 end
