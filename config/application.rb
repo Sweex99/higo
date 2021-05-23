@@ -35,7 +35,6 @@ module Higo
         FactoryBot.factories.clear
         FactoryBot.find_definitions
       end
-
     end
   end
 end
