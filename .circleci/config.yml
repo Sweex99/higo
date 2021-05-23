@@ -19,12 +19,10 @@ jobs:
           command: gem install bundler -v 2.1.2
       - run: bundle install --with test
       - run: sudo apt install -y postgresql-client || true
+      - run: dockerize -wait tcp://localhost:5432 -timeout 1m
       - run:
-          name: Run migrations
-          command: rake db:migrate RAILS_ENV=test
-      - run:
-          name: Run seed
-          command: rake db:seed RAILS_ENV=test
+          name: Setup DB
+          command: bundle exec rake db:setup
       - run:
           name: Run rspec
           command: bundle exec rake
