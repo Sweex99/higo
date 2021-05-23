@@ -1,12 +1,15 @@
 require 'factory_bot_rails'
-require 'faker'
 
-FactoryBot.create(:current_user) # current_user, try login with him
+current_user = FactoryBot.create(:current_user) # current_user, try login with him
 
 3.times do |i|
-  user       = FactoryBot.create(:user)
-  class_room = FactoryBot.create(:class_room)
-  task       = FactoryBot.create(:task)
-
+  FactoryBot.create(:user)
+  FactoryBot.create(:class_room)
+  FactoryBot.create(:task)
   puts 'Created user: ' + i.to_s
 end
+
+ClassRoom.first.students << User.first
+ClassRoom.first.teachers << User.third
+ClassRoom.second.teachers << User.second
+ClassRoom.second.teachers << User.third

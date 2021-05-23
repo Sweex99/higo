@@ -1,13 +1,14 @@
 module Account
   class ClassRoomsController < AccountController
     def index
-      class_rooms = resource.eager_load(:tasks, :users)
+      class_rooms = resource
 
       render json: ClassRoomSerializer.new(class_rooms).serializable_hash
     end
 
     def show
-      class_room = resource.find(params[:id])
+      params_id = params[:id].to_i
+      class_room = resource.find(params_id)
 
       render json: ClassRoomSerializer.new(class_room).serializable_hash
     end
@@ -31,7 +32,7 @@ module Account
     private
 
     def class_room_params
-      params.require(:class_room).permit(:title, :description)
+      params.require(:class_room).permit(:id, :title, :description)
     end
 
     def resource

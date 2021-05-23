@@ -1,0 +1,33 @@
+version: 2.1
+orbs:
+  ruby: circleci/ruby@0.1.2
+
+jobs:
+  build:
+    docker:
+      - image: cimg/ruby:2.7.1
+      - image: circleci/postgres:9.6.2-alpine
+        environment:
+          POSTGRES_USER: tarasmatiiv
+          POSTGRES_DB: higo_db_test
+          RAILS_ENV: test
+    executor: ruby/default
+    steps:
+      - checkout
+      - run:
+          name: Install bundler
+          command: gem install bundler -v 2.1.2
+      - run: bundle install --with test
+      - run: sudo apt install -y postgresql-client || true
+      - run: dockerize -wait tcp://localhost:5432 -timeout 1m
+      - run:
+          name: Setup DB
+          command: bundle exec rake db:setup
+      - run:
+          name: Run rspec
+          command: bundle exec rake
+          environment:
+            RAILS_ENV: test
+      - run:
+          name: Run Rails Best Practices
+          command: rails_best_practices .
