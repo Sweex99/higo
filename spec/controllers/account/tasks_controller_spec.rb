@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Account::TasksController, type: :controller do
   before do
-    sign_in(User.third)
+    sign_in(create(:user))
   end
 
   describe 'GET #index' do
