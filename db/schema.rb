@@ -18,9 +18,9 @@ ActiveRecord::Schema.define(version: 2021_05_23_201531) do
   create_table "answers", force: :cascade do |t|
     t.string "body"
     t.string "url_file"
-    t.integer "user_id"
-    t.integer "mark_id"
-    t.integer "task_id"
+    t.bigint "user_id"
+    t.bigint "mark_id"
+    t.bigint "task_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["mark_id"], name: "index_answers_on_mark_id"
@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(version: 2021_05_23_201531) do
     t.string "logo_color"
     t.string "logo"
     t.boolean "gallery"
-    t.integer "class_room_id"
+    t.bigint "class_room_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["class_room_id"], name: "index_class_room_settings_on_class_room_id"
@@ -47,8 +47,8 @@ ActiveRecord::Schema.define(version: 2021_05_23_201531) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "author_id"
-    t.index ["organization_id"], name: "index_class_rooms_on_organization_id"
     t.index ["author_id"], name: "index_class_rooms_on_author_id"
+    t.index ["organization_id"], name: "index_class_rooms_on_organization_id"
   end
 
   create_table "marks", force: :cascade do |t|

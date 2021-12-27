@@ -14,4 +14,6 @@ Rails.application.routes.draw do
   end
 
   mount Sidekiq::Web => '/sidekiq'
+
+  get '*path', to: 'hello_world#index', via: :all
 end
