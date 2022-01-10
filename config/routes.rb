@@ -4,13 +4,15 @@ Rails.application.routes.draw do
   devise_for :users
   get 'hello_world', to: 'hello_world#index'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  root 'account/home#index'
+  root 'hello_world#index'
 
-  namespace :account do
-    resources :dashboard,   only:   [:index]
-    resources :class_rooms, except: %i[new edit destroy]
-    resources :tasks,       except: %i[new edit destroy]
-    resources :marks,       only:   %i[show index]
+  namespace :v1 do
+    namespace :account do
+      resources :dashboard,   only:   [:index]
+      resources :class_rooms, except: %i[new edit destroy]
+      resources :tasks,       except: %i[new edit destroy]
+      resources :marks,       only:   %i[show index]
+    end
   end
 
   mount Sidekiq::Web => '/sidekiq'

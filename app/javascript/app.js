@@ -1,32 +1,38 @@
-import { onDocumentReady } from "helpers"
+import React from 'react';
+import NavBar from './src/components/layout/NavBar';
+import SideBar from "./src/components/layout/SideBar";
+import Routes from './src/routes/Routes';
+import { Router } from 'react-router-dom';
+import { createBrowserHistory } from 'history'
 
-class App {
-
-  bindDomContentLoaded() {
-    onDocumentReady(() => { this.bindFormAjaxError() })
+class App extends React.Component {
+  history() {
+    return createBrowserHistory();
   }
 
-  bindTurboLinksEvents() {
-    document.addEventListener("turbolinks:load", () => {
-      //Initialize plugins here
-    })
-    document.addEventListener("turbolinks:before-cache", () => {
-      //Destroy plugins here
-    })
-  }
-
-// Private
-  bindFormAjaxError() {
-    document.addEventListener("ajax:error", (e) => {
-      if (e.target.matches("[data-remote='true']")) {
-        iziToast.error({message: "Whoopps, something went wrong.", title: "Error", position: "topRight"})
-      }
-    })
+  render() {
+    return (
+      <div id="app">
+        <div className="main-wrapper main-wrapper-1">
+          <Router history={this.history()}>
+            <div className="navbar-bg"></div>
+            <NavBar />
+            <SideBar />
+            <div className="main-content" style={{minHeight: '876px', backgroundColor: 'white'}}>
+              <Routes />
+            </div>
+            <footer className="main-footer">
+              <div className="footer-left">
+                Copyright C {new Date().getFullYear()} <div className="bullet"></div> Design By <a href="https://nauval.in/"></a>
+              </div>
+              <div className="footer-right">
+              </div>
+            </footer>
+          </Router>
+        </div>
+      </div>
+    )
   }
 }
 
-export function start() {
-  const app = new App()
-  app.bindDomContentLoaded()
-  app.bindTurboLinksEvents()
-}
+export default App;

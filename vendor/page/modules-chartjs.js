@@ -3,7 +3,7 @@
 document.onload = function() {
   var ctx = document.getElementById("myChart").getContext('2d');
   console.log("asdssssssssssss");
-  debugger;
+  
   var myChart = new Chart(ctx, {
   type: 'line',
   data: {

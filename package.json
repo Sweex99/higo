@@ -42,6 +42,7 @@
     "inputmask": "^4.0.9",
     "ionicons201": "1.0.0",
     "izitoast": "^1.4.0",
+    "jest": "^27.4.7",
     "jquery": "^3.6.0",
     "jquery-sparkline": "^2.4.0",
     "jquery-ui-dist": "^1.12.1",
@@ -89,5 +90,8 @@
     "eslint-plugin-react": "^7.16.0",
     "prettier": "^1.19.1",
     "webpack-dev-server": "^3.11.2"
+  },
+  "scripts": {
+    "test": "jest"
   }
 }
