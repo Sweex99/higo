@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Account::ClassRoomsController, type: :controller do
+RSpec.describe V1::Account::ClassRoomsController, type: :controller do
   let(:user) { create :user }
   
   before do
@@ -12,9 +12,8 @@ RSpec.describe Account::ClassRoomsController, type: :controller do
       get :index
 
       json_response = JSON.parse(response.body)
-      json_response['data'].each do |class_room|
-        expect(class_room['type']).to eql('class_room')
-      end
+
+      expect(json_response).to eql []
     end
   end
 

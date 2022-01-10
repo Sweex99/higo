@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Account::TasksController, type: :controller do
+RSpec.describe V1::Account::TasksController, type: :controller do
   let(:user) { create :user }
   
   before do

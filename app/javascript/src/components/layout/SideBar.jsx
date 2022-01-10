@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 class SideBar extends React.Component {
 
@@ -21,16 +22,16 @@ class SideBar extends React.Component {
           <div className="sidebar-brand sidebar-brand-sm">
             <a href="index.html">St</a>
           </div>
-          <div className=" p-3 hide-sidebar-mini">
-            <a href="#" className="btn btn-success btn-lg btn-block btn-icon-split" >
+          <div className="p-3 hide-sidebar-mini">
+            <Link to='/create_class_room' className='btn btn-success btn-lg btn-block btn-icon-split'>
               <i className="fas fa-plus">Створити Клас</i>
-            </a>
+            </Link>
           </div>
           <ul className="sidebar-menu">
             <li>
-              <a href="#" className="nav-link" >
-                <i className="fas fa-chart-line"><span>Dashboard</span></i>
-              </a>
+              <Link to='/class_rooms' className='nav-link'>
+                <i className='fas fa-chart-line'><span>Dashboard</span></i>
+              </Link>
             </li>
             <li>
               <a href="#" className="nav-link" >

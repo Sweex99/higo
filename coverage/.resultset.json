@@ -1,8 +1,9 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/tarasmatiiv/Projects/higo/app/controllers/account/class_rooms_controller.rb": {
+      "/Users/tarasmatiiv/Projects/higo/app/controllers/v1/account/class_rooms_controller.rb": {
         "lines": [
+          1,
           1,
           1,
           1,
@@ -19,6 +20,7 @@
           null,
           null,
           1,
+          0,
           0,
           null,
           0,
@@ -44,16 +46,20 @@
           3,
           null,
           null,
+          null,
           null
         ]
       },
-      "/Users/tarasmatiiv/Projects/higo/app/controllers/account/account_controller.rb": {
+      "/Users/tarasmatiiv/Projects/higo/app/controllers/v1/account/account_controller.rb": {
         "lines": [
+          1,
           1,
           1,
           1,
           null,
           1,
+          1,
+          null,
           1,
           null,
           1,
@@ -70,6 +76,7 @@
           null,
           1,
           4,
+          null,
           null,
           null,
           null
@@ -113,8 +120,10 @@
           null
         ]
       },
-      "/Users/tarasmatiiv/Projects/higo/app/controllers/account/tasks_controller.rb": {
+      "/Users/tarasmatiiv/Projects/higo/app/controllers/v1/account/tasks_controller.rb": {
         "lines": [
+          null,
+          1,
           1,
           1,
           1,
@@ -137,6 +146,7 @@
           null,
           1,
           3,
+          null,
           null,
           null,
           null
@@ -182,24 +192,6 @@
           null
         ]
       },
-      "/Users/tarasmatiiv/Projects/higo/app/serializers/class_room_serializer.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          0,
-          null,
-          null,
-          null
-        ]
-      },
       "/Users/tarasmatiiv/Projects/higo/app/models/mark.rb": {
         "lines": [
           1,
@@ -228,6 +220,6 @@
         ]
       }
     },
-    "timestamp": 1640639577
+    "timestamp": 1641720240
   }
 }
