@@ -5,7 +5,8 @@ development:
   port: 5432
   pool: 5
   database: higo_db_development
-  username: tarasmatiiv
+  username: ivan
+  password: ivan0407
 
 test:
   adapter: postgresql
@@ -14,7 +15,8 @@ test:
   port: 5432
   pool: 5
   database: higo_db_test
-  username: tarasmatiiv
+  username: ivan
+  password: ivan0407
 
 production:
   adapter: postgresql

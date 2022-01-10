@@ -38,3 +38,9 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
+# Ignore gemset
+.ryby-gemset
+
+# Ignore database.yaml
+/config/database.yml
