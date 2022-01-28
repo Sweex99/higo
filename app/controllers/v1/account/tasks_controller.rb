@@ -1,4 +1,3 @@
-
 module V1
   module Account
     class TasksController < AccountController

@@ -26,7 +26,7 @@ require("chart.js")
 window.iziToast = require("izitoast")
 
 // Stisla
-require("../src/services/vendors/stisla/stisla")
-require("../src/services/vendors/stisla/scripts")
+require("../src/utils/vendors/stisla/stisla")
+require("../src/utils/vendors/stisla/scripts")
 require('/vendor/page/bootstrap-modal')
 require("/vendor/page/modules-chartjs")

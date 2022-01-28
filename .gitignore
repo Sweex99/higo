@@ -31,6 +31,7 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+/config/database.yml
 
 /public/packs
 /public/packs-test
@@ -39,8 +40,6 @@
 yarn-debug.log*
 .yarn-integrity
 
-# Ignore gemset
-.ryby-gemset
+.ruby-gemset
 
-# Ignore database.yaml
-/config/database.yml
+coverage/.last_run.json
