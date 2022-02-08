@@ -1,22 +1,20 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/tarasmatiiv/Projects/higo/app/controllers/v1/account/class_rooms_controller.rb": {
+      "/home/user/Project/higo/app/controllers/v1/account/class_rooms_controller.rb": {
         "lines": [
           1,
           1,
           1,
           1,
           1,
+          1,
           null,
           1,
           null,
           null,
           1,
-          2,
-          2,
-          null,
-          0,
+          1,
           null,
           null,
           1,
@@ -34,6 +32,10 @@
           0,
           null,
           0,
+          null,
+          null,
+          1,
+          1,
           null,
           null,
           1,
@@ -46,11 +48,15 @@
           3,
           null,
           null,
+          1,
+          1,
+          null,
+          null,
           null,
           null
         ]
       },
-      "/Users/tarasmatiiv/Projects/higo/app/controllers/v1/account/account_controller.rb": {
+      "/home/user/Project/higo/app/controllers/v1/account/account_controller.rb": {
         "lines": [
           1,
           1,
@@ -67,22 +73,123 @@
           1,
           null,
           1,
-          6,
-          6,
+          13,
+          13,
           null,
           0,
           null,
           null,
+          null,
+          1,
+          3,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/user/Project/higo/spec/controllers/account/organizations_controller_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          7,
+          7,
+          null,
+          1,
+          6,
+          null,
+          null,
+          1,
+          2,
+          null,
+          2,
+          null,
+          null,
+          1,
+          3,
+          1,
+          2,
+          null,
+          2,
+          null,
+          null,
+          1,
+          1,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
+          2,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          2,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/user/Project/higo/app/controllers/v1/account/organizations_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
           null,
           1,
           4,
           null,
           null,
+          1,
+          3,
+          null,
+          null,
           null,
           null
         ]
       },
-      "/Users/tarasmatiiv/Projects/higo/spec/controllers/account/tasks_controller_spec.rb": {
+      "/home/user/Project/higo/spec/controllers/account/tasks_controller_spec.rb": {
         "lines": [
           1,
           null,
@@ -120,9 +227,8 @@
           null
         ]
       },
-      "/Users/tarasmatiiv/Projects/higo/app/controllers/v1/account/tasks_controller.rb": {
+      "/home/user/Project/higo/app/controllers/v1/account/tasks_controller.rb": {
         "lines": [
-          null,
           1,
           1,
           1,
@@ -152,7 +258,26 @@
           null
         ]
       },
-      "/Users/tarasmatiiv/Projects/higo/app/models/user_room.rb": {
+      "/home/user/Project/higo/app/models/class_room.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/user/Project/higo/app/models/user_room.rb": {
         "lines": [
           1,
           1,
@@ -173,26 +298,14 @@
           null
         ]
       },
-      "/Users/tarasmatiiv/Projects/higo/app/models/class_room.rb": {
+      "/home/user/Project/higo/app/models/organization.rb": {
         "lines": [
           1,
           1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
           null
         ]
       },
-      "/Users/tarasmatiiv/Projects/higo/app/models/mark.rb": {
+      "/home/user/Project/higo/app/models/mark.rb": {
         "lines": [
           1,
           1,
@@ -200,7 +313,7 @@
           null
         ]
       },
-      "/Users/tarasmatiiv/Projects/higo/app/models/task.rb": {
+      "/home/user/Project/higo/app/models/task.rb": {
         "lines": [
           1,
           1,
@@ -209,7 +322,7 @@
           null
         ]
       },
-      "/Users/tarasmatiiv/Projects/higo/app/serializers/task_serializer.rb": {
+      "/home/user/Project/higo/app/serializers/task_serializer.rb": {
         "lines": [
           1,
           1,
@@ -220,6 +333,6 @@
         ]
       }
     },
-    "timestamp": 1641720240
+    "timestamp": 1643366571
   }
 }

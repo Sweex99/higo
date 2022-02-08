@@ -9,9 +9,10 @@ Rails.application.routes.draw do
   namespace :v1 do
     namespace :account do
       resources :dashboard,   only:   [:index]
-      resources :class_rooms, except: %i[new edit destroy]
+      resources :class_rooms
       resources :tasks,       except: %i[new edit destroy]
       resources :marks,       only:   %i[show index]
+      resources :organizations
     end
   end
 

@@ -1,7 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe V1::Account::ClassRoomsController, type: :controller do
-  let(:user) { create :user }
+  let!(:user) { create :user }
+  let!(:class_rooms) { create :class_room }
   
   before do
     sign_in(user)
@@ -26,10 +27,16 @@ RSpec.describe V1::Account::ClassRoomsController, type: :controller do
     end
 
     it 'return class room for current user' do
-      class_room = create(:class_room)
-      get :show, params: { id: class_room.id }
+      get :show, params: { id: class_rooms.id }
 
       expect(response).to have_http_status(:success)
+    end
+  end
+
+  describe 'DELETE#destroy' do
+    it 'destroys the classroom' do
+      expect { delete :destroy, params: { id: class_rooms.id } }
+        .to change(ClassRoom, :count).by(-1)
     end
   end
 end
