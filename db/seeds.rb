@@ -6,6 +6,8 @@ current_user = FactoryBot.create(:current_user) # current_user, try login with h
   FactoryBot.create(:user)
   FactoryBot.create(:class_room)
   FactoryBot.create(:task)
+  FactoryBot.create(:organization)
+  FactoryBot.create(:task)
   puts 'Created user: ' + i.to_s
 end
 
